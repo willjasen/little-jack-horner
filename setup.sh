@@ -11,3 +11,6 @@ echo -n "Enter ProXPN username: "
 read proxpn_username
 echo -n "Enter ProXPN password: "
 read proxpn_password
+
+echo $proxpn_username >> /etc/openvpn/creds.conf
+echo $proxpn_password >> /etc/openvpn/creds.conf
