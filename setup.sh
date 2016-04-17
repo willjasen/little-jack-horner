@@ -25,7 +25,7 @@ iptables -t nat -A POSTROUTING -o tun0 -j MASQUERADE
 sudo iptables-save > /etc/iptables.up.rules
 echo 'iptables-restore < /etc/iptables.up.rules' | sudo tee -a /etc/network/if-pre-up.d/iptables
 echo 'exit 0' | sudo tee -a /etc/network/if-pre-up.d/iptables
-
-sudo cp proxpn.conf /etc/openvpn
 sudo chown root:root /etc/network/if-pre-up.d/iptables
 sudo chmod 755 /etc/network/if-pre-up.d/iptables
+
+sudo cp proxpn.conf /etc/openvpn
