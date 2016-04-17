@@ -28,4 +28,9 @@ echo 'exit 0' | sudo tee -a /etc/network/if-pre-up.d/iptables
 sudo chown root:root /etc/network/if-pre-up.d/iptables
 sudo chmod 755 /etc/network/if-pre-up.d/iptables
 
-sudo cp proxpn.conf /etc/openvpn
+# Create symlinks
+#sudo ln -s proxpn.conf /etc/openvpn/proxpn.conf
+#mkdir /etc/openvpn/ssl
+#sudo ln -s ssl/ca.crt /etc/openvpn/ssl/ca.crt
+#sudo ln -s ssl/client.crt /etc/openvpn/ssl/client.crt
+#sudo ln -s ssl/client.key /etc/openvpn/ssl/client.key
