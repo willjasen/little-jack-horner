@@ -29,8 +29,8 @@ sudo chown root:root /etc/network/if-pre-up.d/iptables
 sudo chmod 755 /etc/network/if-pre-up.d/iptables
 
 # Create symlinks
-#sudo ln -s proxpn.conf /etc/openvpn/proxpn.conf
-#mkdir /etc/openvpn/ssl
-#sudo ln -s ssl/ca.crt /etc/openvpn/ssl/ca.crt
-#sudo ln -s ssl/client.crt /etc/openvpn/ssl/client.crt
-#sudo ln -s ssl/client.key /etc/openvpn/ssl/client.key
+sudo ln -s $PWD/proxpn.conf /etc/openvpn/proxpn.conf
+sudo mkdir /etc/openvpn/ssl
+sudo ln -s $PWD/ssl/ca.crt /etc/openvpn/ssl/ca.crt
+sudo ln -s $PWD/ssl/client.crt /etc/openvpn/ssl/client.crt
+sudo ln -s $PWD/ssl/client.key /etc/openvpn/ssl/client.key
