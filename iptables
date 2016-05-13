@@ -1,0 +1,3 @@
+#!/bin/sh
+iptables -t nat -A POSTROUTING -o tun0 -j MASQUERADE
+exit 0
