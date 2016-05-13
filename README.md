@@ -13,4 +13,9 @@ The script setup.sh gathers ProXPN user credentials, installs OpenVPN, and confi
 sudo ./setup.sh
 ```
 
+## Example Environment
+* includes multiple VLANs/subnets
+* Raspberry Pi located on one of the VLANs
+* connecting clients use the Raspberry Pi as default gateway
+* firewall rules block all outgoing traffic except from the Raspberry Pi
 
