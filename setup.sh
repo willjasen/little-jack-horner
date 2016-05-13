@@ -30,6 +30,7 @@ sudo chmod 755 /etc/network/if-up.d/iptables
 
 # Create symlinks
 sudo ln -s $PWD/proxpn.conf /etc/openvpn/proxpn.conf
+sudo ln -s $PWD/iptables /etc/network/if-up.d/iptables
 sudo mkdir /etc/openvpn/ssl
 sudo ln -s $PWD/ssl/ca.crt /etc/openvpn/ssl/ca.crt
 sudo ln -s $PWD/ssl/client.crt /etc/openvpn/ssl/client.crt
