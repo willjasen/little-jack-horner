@@ -1,12 +1,12 @@
 # little-jack-horner
 
-This project aims to setup OpenVPN on a Raspberry Pi to tunnel network traffic out through ProXPN.
+This project aims to setup OpenVPN on a Raspberry Pi to tunnel network traffic out through proXPN.
 
-The script setup.sh gathers ProXPN user credentials, installs OpenVPN, and configures NAT between the VPN tunnel and an internal network(s). The ProXPN connection terminates on the New York server.
+The script setup.sh gathers proXPN user credentials, installs OpenVPN, and configures NAT between the VPN tunnel and an internal network(s). The proXPN connection terminates on the New York server.
 
 ## Limitations
-* a ProXPN paid account is necessary
-* there are no options to change ProXPN server
+* a proXPN paid account is necessary
+* there are no options to change proXPN server
 
 ## Installation
 ```bash
